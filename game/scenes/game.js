@@ -4,7 +4,6 @@ class Game extends Phaser.Scene {
     }
 
     create() {
-
         var canvas = document.getElementsByTagName('canvas');
         let centerX = canvas[0].width / 2;
         let centerY = canvas[0].height / 2;

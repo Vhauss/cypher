@@ -4,11 +4,7 @@ class Game extends Phaser.Scene {
     }
 
     create() {
-        var canvas = document.getElementsByTagName('canvas');
-        let centerX = canvas[0].width / 2;
-        let centerY = canvas[0].height / 2;
-
-        this.character = this.add.image(centerX,centerY, "logo");
+        this.character = this.add.image(config.centerX,config.centerY, "logo");
         this.character.collideWorldBounds = true;
 
         const options = this.add.text(10, 10, "Pause = P");

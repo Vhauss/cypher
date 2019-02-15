@@ -1,3 +1,5 @@
+let centerX = 0;
+let centerY = 0;
 var config = {
     type: Phaser.AUTO,
     height: 820,
@@ -8,7 +10,9 @@ var config = {
             gravity: {y: 500}
         }
     },
-    scene: [Menu, Game, PauseMenu]
+    scene: [Menu, Game, PauseMenu],
+    centerX: document.documentElement.clientWidth / 2 - 100,
+    centerY: document.documentElement.clientHeight / 2 - 100
 };
 
 var game = new Phaser.Game(config);

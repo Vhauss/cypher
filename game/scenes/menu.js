@@ -4,7 +4,11 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
+        //Load Graphical Assets
         this.load.image('logo', "game/assets/logo.png")
+        //Load Audio Assets
+        //Load Scirpts
+        this.load.script("characterScript", "game/gameObjects/characters/character.js");
     }
 
     create() {

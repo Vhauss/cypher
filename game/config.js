@@ -1,9 +1,7 @@
-let centerX = 0;
-let centerY = 0;
 var config = {
     type: Phaser.AUTO,
-    height: 820,
-    width: `100%`,
+    height: document.documentElement.clientHeight,
+    width: document.documentElement.clientWidth,
     physics: {
         default: `arcade`,
         arcade: {

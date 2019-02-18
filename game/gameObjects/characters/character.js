@@ -6,6 +6,8 @@ class Character extends Phaser.GameObjects.Sprite {
 
         this.setTexture('logo');
         this.setPosition(x, y);
+        this.displayHeight = config.tileSize;
+        this.displayWidth = config.tileSize;
 
         this.scene.input.keyboard.on('keydown', (event) => {
             if( event.key == "w" ) {

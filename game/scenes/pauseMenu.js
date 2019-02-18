@@ -10,7 +10,7 @@ class PauseMenu extends Phaser.Scene {
         const option4 = this.add.text(config.centerX,config.centerY + 50, "Option 4");
         const option5 = this.add.text(config.centerX,config.centerY + 100, "Option 5");
 
-        const exitMenu = this.add.text(centerX, centerY + 150,"Exit menu", {
+        const exitMenu = this.add.text(config.centerX, config.centerY + 150,"Exit menu", {
             font: "30px"
         });
 

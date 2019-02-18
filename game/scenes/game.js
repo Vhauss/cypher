@@ -5,10 +5,6 @@ class Game extends Phaser.Scene {
 
     create() {
         this.character = this.add.existing(new Character(this, config.centerX, config.centerY));
-        this.character.displayHeight = config.tileSize;
-        this.character.displayWidth = config.tileSize;
-        this.character.collideWorldBounds = true;
-
         const options = this.add.text(10, 10, "Pause = P, Split = Space");
 
         // Mouse Listener

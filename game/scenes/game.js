@@ -5,6 +5,7 @@ class Game extends Phaser.Scene {
 
     create() {
         this.character = this.add.existing(new Character(this, config.centerX, config.centerY));
+        this.villian = this.add.existing(new Villian(this, 300, 400));
         const options = this.add.text(10, 10, "Pause = P, Split = Space");
 
         // Mouse Listener
@@ -28,6 +29,8 @@ class Game extends Phaser.Scene {
     }
 
     update(delta) {
+        //console.log(Math.floor(Math.random() * Math.floor(2)));
+        
         // Polling for WASD
         // if(this.key_W.isDown) {this.character.y -= 5}
         // if(this.key_A.isDown) this.character.x -= 5

@@ -6,9 +6,11 @@ class Menu extends Phaser.Scene {
     preload() {
         //Load Graphical Assets
         this.load.image('logo', "game/assets/logo.png")
+        this.load.image('rabbitGuy', "game/assets/rabbitGuy.png")
         //Load Audio Assets
         //Load Scirpts
         this.load.script("characterScript", "game/gameObjects/characters/character.js");
+        this.load.script("villianScript", "game/gameObjects/npcs/bad/villian.js");
     }
 
     create() {
